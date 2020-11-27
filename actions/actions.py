@@ -22,7 +22,7 @@ class ActionWeather(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        api_key = '41098d742d293b958e83c551fdb2f0a6'
+        api_key = '...' ### your api key
 
         loc = tracker.get_slot("location")
         parameters = {
