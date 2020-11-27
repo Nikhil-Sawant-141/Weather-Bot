@@ -42,13 +42,13 @@ class ActionWeather(Action):
             temperature = result['current']['temperature']
             humidity = result['current']['humidity']
             wind_speed = result['current']['wind_speed']
-            icon = result['current']['weather_icons'][0]
+
 
             response = """It is currently {} in {},{} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph.""".format(
                 condition, city, country, temperature, humidity, wind_speed)
 
             dispatcher.utter_message(response)
-            dispatcher.utter_message(image=icon)
+            
         else:
             dispatcher.utter_message("""Sorry, I cannot provide weather details for {}. Please enter a valid city or country name.""".format(loc))
 
