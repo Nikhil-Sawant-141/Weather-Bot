@@ -1,0 +1,114 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID 37011d1811b746b2a7d2a72545bb206a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - slot_was_set:
+    - location: California
+  - intent: inform
+    entities:
+    - location: California
+  - action: action_weather
+  - slot_was_set:
+    - location: California
+  - slot_was_set:
+    - location: Chennai
+  - intent: inform
+    entities:
+    - location: Chennai
+  - action: action_weather
+  - slot_was_set:
+    - location: Chennai
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 07282689ca5b41f6aab1a0573d28d48a
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_weather
+  - action: utter_ask_weather
+  - slot_was_set:
+    - location: new delhi
+  - intent: inform
+    entities:
+    - location: new delhi
+  - action: action_weather
+  - slot_was_set:
+    - location: new delhi
+  - slot_was_set:
+    - location: Hyderabad
+  - intent: inform
+    entities:
+    - location: Hyderabad
+  - action: action_weather
+  - slot_was_set:
+    - location: Hyderabad
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 738d21ece85d4dafb46afe1393eb9ff1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - slot_was_set:
+    - location: paris
+  - intent: inform
+    entities:
+    - location: paris
+  - action: action_weather
+  - slot_was_set:
+    - location: paris
+  - slot_was_set:
+    - location: Pune
+  - intent: inform
+    entities:
+    - location: Pune
+  - action: action_weather
+  - slot_was_set:
+    - location: Pune
+  - intent: ask_weather
+  - action: utter_ask_weather
+  - slot_was_set:
+    - location: shimla
+  - intent: inform
+    entities:
+    - location: shimla
+  - action: action_weather
+  - slot_was_set:
+    - location: shimla
+  - slot_was_set:
+    - location: Nikhil
+  - intent: inform
+    entities:
+    - location: Nikhil
+  - action: action_weather
+  - slot_was_set:
+    - location: Nikhil
+  - slot_was_set:
+    - location: south africa
+  - intent: inform
+    entities:
+    - location: south africa
+  - action: action_weather
+  - slot_was_set:
+    - location: south africa
+  - intent: goodbye
+  - action: utter_goodbye
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule: Call API when user provides location
+  steps:
+  - intent: inform
+  - action: action_weather
+- rule: Say thanks anytime the user says thanks
+  steps:
+  - intent: thanking
+  - action: utter_thanking
+

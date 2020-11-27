@@ -1,0 +1,176 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: inform
+  examples: |
+    - What's the weather like in [Berlin](location) at the moment?
+    - What's the weather in [London](location) today?
+    - Show me what's the weather in [Paris](location)
+    - I wonder what is the weather in [Vilnius](location) right now?
+    - Is the weather nice in [Barcelona](location) today?
+    - I am going to [London](location) today and I wonder what is the weather out there?
+    - I am planning my trip to [Amsterdam](location). What is the weather out there?
+    - Show me the weather in [Dublin](location), please
+    - in [london](location)
+    - [Lithuania](location)
+    - Oh, sorry, in [Italy](location)
+    - Tell me the weather in [Vilnius](location)
+    - The weather condition in [italy](location)
+    - Whats the weather in [Russia](location)
+    - Whats the weather in [Mumbai](location)
+    - Whats the weather in [New Delhi](location)
+    - Whats the weather in [Chennai](location)
+    - Whats the weather in [Bangalore](location)
+    - Whats the weather in [Hyderabad](location)
+    - Whats the weather in [Ahmedabad](location)
+    - also in [Hyderabad](location)
+    - in [new delhi](location)
+    - also in [Chennai](location)
+    - What's the weather like in [California](location)
+    - in [Paris](location)?
+    - What's the weather like in [Russia](location)?
+    - in [pune](location)?
+    - also in [Kolkata](location)
+    - What's the weather like in [Jaipur](location)
+    - What's the weather like in [Kerala](location)
+    - also in [Shimla](location)
+    - Tell me the weather in [Agra](location)
+    - Tell me the weather in [Lucknow](location)
+    - [Surat](location)
+    - [Chandigarh](location)
+    - [Kalyan](location)
+    - [Moscow](location)
+    - [Russia](location)
+    - [Tokyo](location)
+    - [Japan](location)
+    - [China](location)
+    - [Beijing](location)
+    - [Dubai](location)
+    - [Singapore](location)
+    - [australia](location)
+    - [south africa](location)
+    - [new zealand](location)
+    - [Canada](location)
+    - [Brazil](location)
+    - [New York](location)
+    - [San Francisco](location)
+    - [Boston](location)
+    - [usa](location)
+    - in [Ahmedabad](location)?
+    - [Mumbai](location)
+    - in [south africa](location)
+    - in [Nikhil](location)
+    - in [shimla](location)
+    - also in [Pune](location)
+    - whats the weather in [paris](location)
+    - [Usa](location)
+    - [Newyork](location)
+    - in [tokyo](location)
+    - In [Dubai](location)
+    - also in [Australia](location)
+    - Show me current weather in [Kolkata](location)
+    - in  [Surat](location)
+- intent: ask_weather
+  examples: |
+    - Whats the weather?
+    - What's the weather today?
+    - what is the weather?
+    - Tell me the weather
+    - Show me weather details
+    - What is the weather out there?
+    - weather
+    - give me weather details
+    - Whats the weather
+    - Whats the weather today
+    - show me weather details
+- intent: thanking
+  examples: |
+    - thankyou
+    - thanks
+    - thank you
+    - thanks bot
+    - thanks a lot
